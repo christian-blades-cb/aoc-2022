@@ -3,6 +3,7 @@
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 fn main() {
     let day1sample = r#"
@@ -51,4 +52,18 @@ CrZsJsPPZsGzwwsLwLmpwMDw
     dbg!(day3::part1(day3input));
     dbg!(day3::part2(day3sample));
     dbg!(day3::part2(day3input));
+
+    let day4sample = r#"
+2-4,6-8
+2-3,4-5
+5-7,7-9
+2-8,3-7
+6-6,4-6
+2-6,4-8
+"#;
+    let day4input = include_str!("../inputs/day4");
+    dbg!(day4::part1(day4sample));
+    dbg!(day4::part1(day4input));
+    dbg!(day4::part2(day4sample));
+    dbg!(day4::part2(day4input));
 }

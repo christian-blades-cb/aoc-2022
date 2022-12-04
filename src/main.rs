@@ -1,5 +1,8 @@
+#![feature(iter_next_chunk)]
+
 mod day1;
 mod day2;
+mod day3;
 
 fn main() {
     let day1sample = r#"
@@ -34,4 +37,18 @@ C Z
     dbg!(day2::part1(day2input));
     dbg!(day2::part2(day2sample));
     dbg!(day2::part2(day2input));
+
+    let day3sample = r#"
+vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw
+"#;
+    let day3input = include_str!("../inputs/day3");
+    dbg!(day3::part1(day3sample));
+    dbg!(day3::part1(day3input));
+    dbg!(day3::part2(day3sample));
+    dbg!(day3::part2(day3input));
 }

@@ -5,6 +5,7 @@ mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 
 fn main() {
     let day1sample = r#"
@@ -119,4 +120,11 @@ move 1 from 1 to 2
         vec!['L', 'D', 'T', 'R', 'H', 'P', 'F', 'S'], // 9
     ];
     dbg!(day5::part2(&mut day5_state, &day5input));
+
+    let day6sample = r#"mjqjpqmgbljsphdztnvjfqwrcgsmlb"#;
+    let day6input = include_str!("../inputs/day6");
+    dbg!(day6::part1(&day6sample));
+    dbg!(day6::part1(&day6input));
+    dbg!(day6::part2(&day6sample));
+    dbg!(day6::part2(&day6input));
 }
